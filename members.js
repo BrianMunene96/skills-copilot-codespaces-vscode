@@ -1,3 +1,12 @@
 function skillsMember(){
-    console.log("I have no access to Co-pilot, Sorry!!")
+    return{
+        restrict: 'E',
+        templateUrl: 'modules/skills/views/member.html',
+        controller: 'SkillsMemberController',
+        controllerAs: 'vm',
+        bindToController: true,
+        scope: {
+            member: '='
+        }
+    };
 }
